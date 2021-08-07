@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottomSheetContainer"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_sheet_background">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Drink hot"
+        android:padding="15dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textStyle="normal"
+        android:fontFamily="sans-serif"
+        android:text="Drinking hot beneifical beverges frequently helps you keep your body warm,hydrated and stregthen your immunee system"/>
+    <TextView
+        android:id="@+id/set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set a reminder"
+        android:layout_marginTop="45dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="35dp"
+        android:textSize="18sp"/>
+
+    <Switch
+        android:id="@+id/switch_on"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-25dp"
+        android:layout_marginLeft="300dp"
+        android:theme="@style/SCBSwitch"
+        android:checked="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textColor="@android:color/black"
+            android:id="@+id/textevery"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="70dp"
+            android:text="Every"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            />
+
+        <NumberPicker
+            android:id="@+id/numberhour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="0dp"
+
+            />
+        <TextView
+            android:id="@+id/texthour"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="75dp"
+            android:text="hours"
+            android:textSize="20dp"
+            />
+
+
+    </RelativeLayout>
+</LinearLayout>

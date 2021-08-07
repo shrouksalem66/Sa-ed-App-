@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".offerFragment"
+    android:background="@drawable/filter_background">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RadioGroup
+        android:id="@+id/radiogroup_offer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        >
+
+        <RadioButton
+            android:checked="true"
+            android:textColor="#8B000000"
+            android:id="@+id/face_mask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Face Mask"
+            android:paddingVertical="12dp"
+            android:textSize="25dp" />
+
+        <RadioButton
+            android:textColor="#8B000000"
+            android:paddingVertical="12dp"
+            android:id="@+id/hand_sanitizer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hand Sanitizer"
+            android:textSize="25dp" />
+
+        <RadioButton
+            android:paddingVertical="12dp"
+            android:id="@+id/oxgyen_tank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Oxygen Tank"
+            android:textSize="25dp"
+            android:textColor="#8B000000"/>
+
+        <RadioButton
+            android:textColor="#8B000000"
+            android:paddingVertical="12dp"
+            android:id="@+id/medical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="COVID-19 Medical"
+            android:textSize="25dp" />
+
+        <RadioButton
+            android:textColor="#8B000000"
+            android:paddingVertical="12dp"
+            android:id="@+id/car_ride"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Car Ride"
+            android:textSize="25dp" />
+
+        <RadioButton
+            android:textColor="#8B000000"
+            android:paddingVertical="12dp"
+            android:id="@+id/show_offers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show All Offers"
+            android:textSize="25dp" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/ShowResult_offer"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="350dp"
+        android:background="@drawable/editt"
+        android:fontFamily="sans-serif"
+        android:padding="10dp"
+        android:text="Show Result"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        android:textStyle="normal" />
+
+
+</FrameLayout>

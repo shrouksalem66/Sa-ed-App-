@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+    <!--
+      kan momkn tab2a linear layout horizontal bas relative a7sn 3ashan margin
+      -->
+    <!-- Ma7dsh el3b feh ay margin aw ay 7aga haz3lo-->
+    <!--Up-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/up"
+        android:background="#4DBFFF"
+        >
+        <ImageView
+            android:id="@+id/logoimage"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/sa3edlogo" />
+        <EditText
+            android:id="@+id/search_bar"
+            android:layout_width="250dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="95dp"
+            android:background="@drawable/edit"
+            android:drawableRight="@drawable/ic_search"
+            android:drawablePadding="10dp"
+            android:hint="    Search"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:layout_marginTop="15dp"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/notification"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/search_bar"
+            android:src="@drawable/ic_bell" />
+    </RelativeLayout>
+    <!--Middle-->
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swip_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="664dp"
+        android:layout_above="@+id/down"
+        android:layout_below="@+id/up"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="-43dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="700dp"
+            android:layout_above="@+id/down"
+            android:layout_marginTop="60dp"
+            android:fillViewport="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/up"
+                android:layout_marginTop="5dp">
+
+                <TextView
+
+                    android:id="@+id/what_do"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="What would you like to do,"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="240dp"
+                    android:textColor="@android:color/black"
+                    android:paddingTop="10dp"
+                    android:text=""
+                    android:textSize="18sp"
+                    />
+
+                <Button
+                    android:id="@+id/Needhelp_btn"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Name"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/editt"
+                    android:fontFamily="sans-serif"
+                    android:padding="10dp"
+                    android:text="Need Help"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="25dp"
+                    android:textStyle="normal" />
+
+                <Button
+                    android:id="@+id/OfferHelp_btn"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="110dp"
+                    android:background="@drawable/editt"
+                    android:fontFamily="sans-serif"
+                    android:padding="10dp"
+                    android:text="Offer Help"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="25dp"
+                    android:textStyle="normal" />
+                <!--
+        konty 3yzha t3mlha button ya shrouk
+        -->
+                <Button
+                    android:id="@+id/filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="170dp"
+                    android:background="#00000000"
+                    android:drawableLeft="@drawable/filter"
+                    android:drawableRight="@drawable/ic_down"
+                    android:text="Filter"
+                    android:textAllCaps="false"
+                    android:textSize="18dp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="230dp" />
+
+            </RelativeLayout>
+            <!--Bottom-->
+        </ScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/down"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+       >
+
+        <ImageView
+            android:id="@+id/homelogo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="74dp"
+            android:src="@drawable/home1" />
+
+        <ImageView
+            android:id="@+id/shieldlogo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/shield" />
+
+        <ImageView
+            android:id="@+id/user1logo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="89dp"
+            android:layout_toRightOf="@+id/shieldlogo"
+            android:src="@drawable/user1" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

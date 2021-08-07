@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FilterActivity"
+    android:background="@drawable/backgroundpost">
+
+    <com.google.android.material.appbar.CollapsingToolbarLayout
+        android:id="@+id/collapsingtoolbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:background="@drawable/textpost"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp">
+
+        <ImageView
+            android:id="@+id/imageViewClose"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_gravity="right"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            app:srcCompat="@drawable/ic_close"
+            tools:ignore="VectorDrawableCompat" />
+
+        <Button
+            android:id="@+id/clear_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:paddingTop="10dp"
+            android:text="Clear all"
+            android:textAllCaps="false"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/filtertext"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="Filter"
+            android:textSize="30dp" />
+    </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    <TextView
+        android:id="@+id/filterby"
+        android:layout_width="107dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="4dp"
+        android:paddingLeft="10dp"
+        android:text="Filter by:"
+        android:textColor="#8B000000"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/collapsingtoolbarlayout" />
+
+    <RelativeLayout
+        android:id="@+id/bottomfilter"
+        android:layout_width="327dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/filter_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/collapsingtoolbarlayout">
+
+        <Button
+            android:id="@+id/btnitemFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginRight="36dp"
+            android:layout_marginLeft="37dp"
+            android:layout_toStartOf="@+id/btnneedfilter"
+            android:layout_toLeftOf="@+id/btnneedfilter"
+            android:background="@drawable/editt"
+            android:text="Item" />
+
+        <Button
+            android:id="@+id/btnneedfilter"
+            android:layout_width="wrap_content"
+            android:layout_height="31dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@color/offcolor"
+            android:text="Needs"
+            android:layout_marginRight="5dp" />
+
+        <Button
+            android:id="@+id/btnofferFilter"
+            android:layout_width="61dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="37dp"
+            android:layout_marginLeft="37dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/btnneedfilter"
+            android:layout_toRightOf="@+id/btnneedfilter"
+            android:background="@color/offcolor"
+            android:text="Offers" />
+
+    </RelativeLayout>
+    <FrameLayout
+        android:id="@+id/fragment_filter"
+        android:layout_width="298dp"
+        android:layout_height="425dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bottomfilter"
+      >
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

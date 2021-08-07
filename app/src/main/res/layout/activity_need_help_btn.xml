@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".offerHelp_btn"
+    android:background="@drawable/backgroundpost">
+
+    <Button
+        android:id="@+id/cancel_btn"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:background="@android:color/transparent"
+        android:text="Cancel"
+        android:textAllCaps="false"
+        android:textSize="18dp"
+        android:drawableLeft="@drawable/ic_baseline_keyboard_arrow_left_24"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/profile_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="150dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/user_icon"
+        app:shapeAppearanceOverlay="@style/circular"
+        app:strokeColor="#4DBFFF"
+        app:strokeWidth="2dp"/>
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="140dp"
+        android:text=""
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#777b7e"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="80dp"
+        android:text="Rating:"
+        android:textSize="20dp"/>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="245dp"
+        android:numStars="5"
+        android:rating="0"
+        android:stepSize="0.5"
+        style="?android:attr/ratingBarStyleIndicator"
+        android:isIndicator="false"
+        android:theme="@style/ratingBar"/>
+
+    <TextView
+        android:id="@+id/details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="295dp"
+        android:layout_marginLeft="30dp"
+        android:text=""
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="340dp"
+        android:layout_marginStart="42dp"
+        android:text="Comments:"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/comment_box"
+        android:layout_width="320dp"
+        android:layout_height="100dp"
+      android:layout_below="@+id/comment"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/comment_box"
+        android:inputType="textMultiLine"
+        android:padding="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/request_btn"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="750dp"
+        android:background="@drawable/btn2_bg"
+        android:fontFamily="sans-serif"
+        android:padding="10dp"
+        android:text="Send request"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        android:textStyle="normal" />
+
+    <Button
+        android:id="@+id/call_btn"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="750dp"
+        android:fontFamily="sans-serif"
+        android:padding="10dp"
+        android:text="Call"
+        android:textAllCaps="false"
+        android:textColor="#0080c8"
+        android:textSize="25dp"
+        android:textStyle="normal"
+        android:background="@drawable/btn_bg"
+        android:onClick="showDialog"/>
+</RelativeLayout>

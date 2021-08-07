@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".manage_account"
+    android:background="@drawable/bluebackground">
+
+    <Button
+        android:id="@+id/manage_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:text="Manage account"
+        android:padding="15dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/black"
+        android:textSize="25dp"
+        android:drawableLeft="@drawable/ic_baseline_keyboard_arrow_left_24"
+        android:textAllCaps="false"/>
+
+    <TextView
+        android:id="@+id/account_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Account information"
+        android:textColor="#777b7e"
+        android:textSize="20dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="15dp"
+        tools:layout_editor_absoluteX="254dp"
+        tools:layout_editor_absoluteY="130dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/manager_account"
+        android:layout_width="400dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="190dp"
+        android:background="@android:color/transparent"
+        android:gravity="center_vertical"
+        android:text="Phone number"
+        android:textSize="17dp"
+        android:textAllCaps="false"
+        android:paddingLeft="20dp"
+        android:drawableRight="@drawable/ic_baseline_keyboard_arrow_right_24"/>
+
+    <Button
+        android:id="@+id/email"
+        android:layout_width="400dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="230dp"
+        android:background="@android:color/transparent"
+        android:gravity="center_vertical"
+        android:text="Email"
+        android:textSize="17dp"
+        android:textAllCaps="false"
+        android:paddingLeft="20dp"
+        android:drawableRight="@drawable/ic_baseline_keyboard_arrow_right_24"/>
+
+    <Button
+        android:id="@+id/password"
+        android:layout_width="400dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="270dp"
+        android:background="@android:color/transparent"
+        android:gravity="center_vertical"
+        android:text="Password"
+        android:textSize="17dp"
+        android:textAllCaps="false"
+        android:paddingLeft="20dp"
+        android:drawableRight="@drawable/ic_baseline_keyboard_arrow_right_24"/>
+
+    <View
+        android:layout_width="390dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="310dp"
+        android:layout_marginLeft="13dp"
+        android:background="#94989B"/>
+
+    <TextView
+        android:id="@+id/account_control"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Account control"
+        android:textColor="#777b7e"
+        android:textSize="20dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginLeft="15dp"
+        tools:layout_editor_absoluteX="254dp"
+        tools:layout_editor_absoluteY="130dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/del_account"
+        android:layout_width="400dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="360dp"
+        android:background="@android:color/transparent"
+        android:gravity="center_vertical"
+        android:text="Delete account"
+        android:textSize="17dp"
+        android:textAllCaps="false"
+        android:paddingLeft="20dp"
+        android:drawableRight="@drawable/ic_baseline_keyboard_arrow_right_24"/>
+
+
+</RelativeLayout>

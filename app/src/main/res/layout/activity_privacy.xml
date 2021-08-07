@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bluebackground"
+    tools:context=".privacy">
+
+    <Button
+        android:id="@+id/privacy_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:text="Privacy"
+        android:padding="15dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/black"
+        android:textSize="25dp"
+        android:drawableLeft="@drawable/ic_baseline_keyboard_arrow_left_24"
+        android:textAllCaps="false"/>
+
+    <TextView
+        android:id="@+id/discover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Discoverability"
+        android:textColor="#777b7e"
+        android:textSize="20dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="15dp"
+        tools:layout_editor_absoluteX="254dp"
+        tools:layout_editor_absoluteY="130dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:layout_marginTop="190dp"
+        android:layout_marginLeft="10dp"
+        android:text="Show phone number"
+        android:textSize="17dp"
+        android:paddingLeft="10dp"/>
+    <Switch
+        android:id="@+id/switch_on1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="190dp"
+        android:checked="false"
+        android:layout_marginLeft="340dp"
+        android:theme="@style/SCBSwitch"/>
+
+    <TextView
+        android:id="@+id/where_live"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:layout_marginTop="230dp"
+        android:layout_marginLeft="10dp"
+        android:text="Show where you live"
+        android:textSize="17dp"
+        android:paddingLeft="10dp"/>
+    <Switch
+        android:id="@+id/switch_on2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="230dp"
+        android:checked="false"
+        android:layout_marginLeft="340dp"
+        android:theme="@style/SCBSwitch"/>
+
+    <TextView
+        android:id="@+id/bd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:layout_marginTop="270dp"
+        android:layout_marginLeft="10dp"
+        android:text="Show birthdate"
+        android:textSize="17dp"
+        android:paddingLeft="10dp"/>
+    <Switch
+        android:id="@+id/switch_on3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="270dp"
+        android:checked="false"
+        android:layout_marginLeft="340dp"
+        android:theme="@style/SCBSwitch"/>
+
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:layout_marginTop="310dp"
+        android:layout_marginLeft="10dp"
+        android:text="Show gender"
+        android:textSize="17dp"
+        android:paddingLeft="10dp"/>
+    <Switch
+        android:id="@+id/switch_on4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="310dp"
+        android:checked="false"
+        android:layout_marginLeft="340dp"
+        android:theme="@style/SCBSwitch"/>
+
+</RelativeLayout>

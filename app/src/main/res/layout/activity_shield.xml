@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShieldActivity">
+    <!--Up-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/up"
+        android:background="#4DBFFF"
+        >
+        <ImageView
+            android:id="@+id/logoimage"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/sa3edlogo" />
+        <EditText
+            android:id="@+id/search_bar"
+            android:layout_width="250dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="95dp"
+            android:background="@drawable/edit"
+            android:drawableRight="@drawable/ic_search"
+            android:drawablePadding="10dp"
+            android:hint="    Search"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:layout_marginTop="15dp"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/notification"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/search_bar"
+            android:src="@drawable/ic_bell" />
+    </RelativeLayout>
+    <!--Bottom-->
+    <RelativeLayout
+        android:id="@+id/down"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="800dp">
+        <ImageView
+            android:id="@+id/homelogo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/home"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="74dp"/>
+        <ImageView
+            android:id="@+id/shieldlogo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/shield1"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+        <ImageView
+            android:id="@+id/user1logo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/user1"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/shieldlogo"
+            android:layout_marginLeft="89dp"
+            />
+</RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Are you in emergency?"
+        android:layout_marginTop="100dp"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:fontFamily="sans-serif"
+        android:layout_marginLeft="20dp"/>
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+         xmlns:tools="http://schemas.android.com/tools"
+         android:layout_width="360dp"
+        android:layout_centerHorizontal="true"
+         android:layout_height="200dp"
+         android:layout_marginTop="140dp"
+         android:id="@+id/map"
+         android:name="com.google.android.gms.maps.SupportMapFragment" />
+    <Button
+        android:id="@+id/nearest_btn"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/map"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/editt"
+        android:text="Locate the nearest hospital"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false"
+        android:textSize="18dp"
+        android:textColor="@android:color/white"/>
+<View
+    android:id="@+id/hori_line"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@android:color/darker_gray"
+    android:layout_below="@+id/nearest_btn"
+    android:layout_marginTop="30dp"/>
+    <TextView
+        android:id="@+id/reminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hori_line"
+        android:text="Reminders"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/darker_gray"/>
+
+    <ImageView
+        android:id="@+id/wash_hand"
+        android:layout_width="180dp"
+        android:layout_height="220dp"
+        android:layout_below="@+id/reminder"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/washhandcard" />
+<ImageView
+    android:id="@+id/drink_hot"
+    android:layout_width="180dp"
+    android:layout_height="220dp"
+    android:layout_marginLeft="15dp"
+    android:layout_below="@+id/reminder"
+    android:layout_marginTop="35dp"
+    android:layout_toRightOf="@+id/wash_hand"
+    android:src="@drawable/drinkhotcard"
+    />
+</RelativeLayout>
